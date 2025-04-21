@@ -19,7 +19,7 @@ def zernike(fx, fy, i, wz):
     if len(i) != len(wz):
         raise ValueError('zernike:Matchinglength','i and wz must be the same length.')
     
-    zernike_index = np.load('Lab4\zernike_index.npy')
+    zernike_index = np.load(r'C:\Users\willi\OneDrive - The Webb Schools\Documents\BME Year 3\Build_Imager\Lab4\zernike_index.npy')
     Z_sum = 0
     for ind in range(len(i)):
         n = zernike_index[i[ind]-1, 0]
